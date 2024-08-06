@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 
-export const Container = styled.section`
+export const Container = styled.header`
     background-color: #EDF1FC;
-  
+    flex-direction: column;
+    justify-content: center;
     min-height: 25px;
     display: flex;
     align-items: center;

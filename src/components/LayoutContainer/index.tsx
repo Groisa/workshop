@@ -1,7 +1,7 @@
 'use client'
 
-
-import React from 'react';
+import { Montserrat } from 'next/font/google'
+import React, { Suspense, useEffect, useState } from 'react';
 import UperHeader from './UperHeader';
 
 // import { Container } from './styles';
@@ -9,16 +9,28 @@ import UperHeader from './UperHeader';
 interface LayoutProps {
   children: React.ReactNode
 }
-
+const inter = Montserrat({ subsets: ['latin'] })
 const LayoutContainer: React.FC<LayoutProps> = ({
   children
 }) => {
+  const [init, setInit] = useState<boolean>(false);
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setInit(true)
+    })
+  }, [])
   return (
-    <>
-      <header>
-        <UperHeader />
-      </header>
-    </>
+    <Suspense>
+      <UperHeader />
+      <main className={inter.className}>
+        {
+          init &&
+          children
+        }
+      </main>
+    </Suspense>
   );
 }
 
