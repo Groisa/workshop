@@ -47,10 +47,13 @@ const HomeStructure: React.FC = () => {
                             <p className={styles.text}><a href='#inicio'>Sobre</a></p>
                             <p className={styles.text}><a href='#servicos'>Serviços</a></p>
                             <p className={styles.text}><a href='#contato'>Entre em Contato</a></p>
-                            <div style={{ display: 'flex', gap: 10 , flexDirection: 'row'}}>
+                            <div style={{ display: 'flex', gap: 10, flexDirection: 'row' }}>
                                 <FaInstagram style={{ cursor: 'pointer' }} color='#fff' size={25} onClick={() => {
-                                    const link = 'https://www.instagram.com/studioartec_/'
-                                    window.open(link)
+                                    if (width <= 768) {
+                                        window.location.href = "instagram://user?username=studioartec_";
+                                    } else {
+                                        window.location.href = "https://www.instagram.com/studioartec_/";
+                                    }
                                 }} />
 
                                 <GoLocation style={{ cursor: 'pointer' }} color='#fff' size={25}
