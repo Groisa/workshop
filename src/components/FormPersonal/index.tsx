@@ -123,8 +123,8 @@ const FormPersonal: React.FC = () => {
                                     justifyContent: 'center',
                                     textAlign: 'center'
                                 }}>
+                                    <p>Atendimento de interesse</p>
                                     <div className={styles.containerChecks}>
-                                        <p>Atendimento de interesse</p>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                                             <CheckBox
                                                 checked={checked?.personal?.checked}
