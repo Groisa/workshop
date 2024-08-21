@@ -10,8 +10,8 @@ export default function Document() {
         <meta property="og:image" content={'https://studioartec.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fartelogo.6d6dbbb3.png&w=750&q=75'} />
         <meta property="og:url" content="https://studioartec.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Studio Artec" />
-        <meta property="og:description" content="Studio Artec é uma empresa especializada em ar-condicionado automotivo, oferecendo serviços completos para manutenção, reparo e instalação de sistemas de climatização em veículos. Nossa equipe altamente qualificada trabalha com tecnologia de ponta para garantir o máximo de eficiência e conforto no seu carro. No Studio Artec, priorizamos a qualidade e a satisfação do cliente, atendendo às mais variadas necessidades do mercado automotivo. Seja para recarga de gás, limpeza de filtros, ou diagnósticos avançados, você pode contar com a nossa expertise para manter o ar do seu veículo sempre fresco e saudável." />
+        <meta property="og:title" content="Studio Artec - Ar-condicionado Automotivo - Congonhas MG" />
+        <meta property="og:description" content="Studio Artec é uma empresa especializada em ar-condicionado automotivo localizada na cidade de congonhas mg, oferecendo serviços completos para manutenção, reparo e instalação de sistemas de climatização em veículos. Nossa equipe altamente qualificada trabalha com tecnologia de ponta para garantir o máximo de eficiência e conforto no seu carro. No Studio Artec, priorizamos a qualidade e a satisfação do cliente, atendendo às mais variadas necessidades do mercado automotivo. Seja para recarga de gás, limpeza de filtros, ou diagnósticos avançados, você pode contar com a nossa expertise para manter o ar do seu veículo sempre fresco e saudável." />
 
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
