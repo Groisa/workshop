@@ -30,7 +30,7 @@ const HomeStructure: React.FC = () => {
     }, [])
     const handleMensagem = () => {
         const phone = "5531993701153"
-        const mensagem = "Olá, quero saber mais das aulas de Jiu Jitsu"
+        const mensagem = "Olá, quero um orçamento para meu carro"
         const link = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(mensagem)}`;
         window.open(link)
     }
