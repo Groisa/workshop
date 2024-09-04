@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import LogoArtec from '../../assets/imgs/artelogo.png';
 import LogoArtecExtends from '../../assets/imgs/arte.png'
-import Projeto from '../../assets/imgs/projeto.png';
+import Studio from '../../assets/imgs/studio-_1_ (1).jpg';
 import Projeto1 from '../../assets/imgs/projeto1.png';
 import Projeto2 from '../../assets/imgs/projeto2.png';
 import Projeto3 from '../../assets/imgs/projeto3.png';
@@ -86,9 +86,7 @@ const HomeStructure: React.FC = () => {
             <div className={styles.carroselDiv} id="servicos">
                 <Carrossel />
             </div>
-            <div className={styles.iframe} id="contato">
-                <FormPersonal />
-            </div>
+
 
 
             <ModalComponente showModal={showMaps} setShowModal={setShowMaps} title={'Localização'} >
@@ -107,6 +105,39 @@ const HomeStructure: React.FC = () => {
             </ModalComponente>
             <div className={styles.containerWhatss} title='Chamar no WhatsApp' onClick={() => handleMensagem()}>
                 <FaWhatsapp size={width > 767 ? 50 : 30} color="#fff" />
+            </div>
+
+
+            <div className={styles.containerHome}>
+                <h4>Nosso Espaço</h4>
+
+                <div className={styles.aboutSpace}>
+                    <img src={Studio.src} alt={Studio.src} />
+                    <div className={styles.contentText}>
+                        <p>Estamos prontos para receber você em um ambiente cuidadosamente preparado para oferecer o melhor em qualidade e confiança. Cada detalhe foi pensado para garantir que sua experiência conosco seja excepcional, desde o atendimento até a execução dos serviços. Nossa equipe está comprometida em proporcionar um serviço de excelência, garantindo que você tenha a certeza de estar escolhendo o que há de melhor no mercado. Venha nos visitar e sinta a diferença de ser atendido por quem realmente entende e valoriza as suas necessidades.</p>
+                    </div>
+                </div>
+            </div>
+            <h3 style={{ textAlign: 'center', fontSize: 23, marginTop: 30 }}>Avaliações dos clientes</h3>
+            <div className={styles.containerCliente}>
+                <div className={styles.containerAvaliation}>
+                    <h3>João Amorok</h3>
+                    <p>A melhor loja de serviços de ar-condicionado automotivo da região. Atendimento impecável e resultados de alta qualidade.</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </div>
+                <div className={styles.containerAvaliation}>
+                    <h3>Caio Jetta</h3>
+                    <p>Além da higienização completa, meu carro ficou incrivelmente limpo. Serviço de primeira linha!</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </div>
+                <div className={styles.containerAvaliation}>
+                    <h3>Vitor Cruze</h3>
+                    <p>Sem dúvida, o melhor atendimento da região. Profissionalismo e eficiência em cada detalhe.</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <div className={styles.iframe} id="contato">
+                <FormPersonal />
             </div>
         </div >
     );

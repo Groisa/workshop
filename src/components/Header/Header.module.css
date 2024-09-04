@@ -1,6 +1,7 @@
 .container {
     width: 100vw;
     overflow-x: hidden !important;
+
 }
 
 .header {
@@ -247,8 +248,8 @@
 
     .textContainer2 {
         flex-direction: column;
-        gap: 0px;   
-        
+        gap: 0px;
+
         padding: 10px;
 
     }
@@ -313,5 +314,148 @@
     .containerAbout span h1 {
         font-size: 39px;
         margin-top: 25px;
+    }
+}
+
+.containerCliente {
+    display: grid;
+    padding: 15px 10px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
+    grid-template-columns: minmax(auto, 300px) minmax(auto, 300px);
+
+    justify-items: center;
+
+    align-items: center;
+
+}
+
+.containerCliente>div:nth-child(3) {
+    grid-column: span 2;
+
+    justify-self: center;
+
+}
+
+.containerAvaliations {
+    width: 95%;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+
+
+}
+
+.studio {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dataContainer {
+    width: 50%;
+    height: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containerAvaliation {
+    width: 395px;
+    height: 192px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border-radius: 10px;
+
+
+}
+
+.containerAvaliation:hover {
+    scale: 1.01
+}
+
+.containerHome {
+    display: flex;
+    background-color: #03263f;
+    padding: 30px 20px;
+    flex-direction: column;
+    min-height: 250px;
+    gap: 20px;
+    align-items: center;
+}
+
+.containerHome h4 {
+    color: #fff;
+    font-size: 29px;
+
+}
+
+.containerHome img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.aboutSpace {
+    display: flex;
+    width: 90%;
+    background-color: #05304f;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contentText {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contentText p {
+    font-size: 18px;
+}
+
+.containerHome p {
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    .containerAvaliation {
+        width: 98% !important;
+    }
+
+    .aboutSpace {
+        flex-direction: column;
+    }
+
+    .containerHome img {
+        width: 100%;
+    }
+
+    .aboutSpace {
+        width: 98%;
+        
+    }
+    .contentText{
+        padding: 10px;
+    
+    }
+
+    .containerCliente {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+
     }
 }
