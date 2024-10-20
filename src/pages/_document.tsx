@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-        <title>Studio Artec</title>
+        <title>Studio Artec - Ar-condicionado Automotivo - Congonhas MG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content={'https://studioartec.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fartelogo.6d6dbbb3.png&w=750&q=75'} />
         <meta property="og:url" content="https://studioartec.vercel.app/" />
